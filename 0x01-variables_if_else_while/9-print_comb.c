@@ -21,7 +21,10 @@ int main(void)
 		{
 			if (n != 9)
 				putchar(',');
-			putchar(' ');
+			{
+				if (n < 9)
+					putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
