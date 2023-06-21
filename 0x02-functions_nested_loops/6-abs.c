@@ -1,17 +1,17 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
- * _abs - computes the absolute value of an integer
+ *_abs - print the excalt number
+ *@n: checks the number
  *
- *
- * Returned: Always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int _abs(int n)
 {
+	int num;
 
-	n = abs();
+	num = abs(n);
 
-	return (0);
+	return (num);
 }
