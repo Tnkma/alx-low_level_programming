@@ -4,6 +4,7 @@
 
 /**
  * _islower - check the code.
+ * @c: compares the value
  *
  * Return: Always 0 (success)
  *
