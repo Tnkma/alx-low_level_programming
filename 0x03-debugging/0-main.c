@@ -1,30 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
 #include "main.h"
 
 /**
- * positive_or_negative - checks if an input is negative
- * @i: input variable
- *
- * betty coding style stays here
- *
- * Return: Always 0 meaning (success)
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
 
-void positive_or_negative(int i)
+int main(void)
 {
-	/* your code goes there */
+        int i;
 
-	if (i < 0)
-	{
-		printf("%d is negative\n", i);
-	}
-	else if (i > 0)
-	{
-		printf("%d is positive\n", i);
-	}
+        i = 0;
+        positive_or_negative(i);
 
-	else
-		printf("%d is zero\n", i);
-
+        return (0);
 }
