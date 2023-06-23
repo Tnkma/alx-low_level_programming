@@ -3,7 +3,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * positive_or_negative - checks if an input is negative
+ * @i: input variable
  *
  * betty coding style stays here
  *
