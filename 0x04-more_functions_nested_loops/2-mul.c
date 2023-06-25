@@ -2,7 +2,7 @@
 
 /**
  * mul - mutiplies two integers
- * @a: first value 
+ * @a: first value
  * @b: second value
  *
  * Return: Always 0 (success)
