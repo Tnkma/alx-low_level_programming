@@ -11,18 +11,14 @@
 
 int _isupper(int c)
 {
-	char alp;
-
-	for (alp = 'A'; alp <= 'Z'; alp++)
+	if (c >= 'A' && c <= 'Z')
 	{
-		if (c == alp)
-		{
-			return (1);
-		}
-		else
-			return (0);
+		return (1);
 	}
-
+	else
+	{
+		return (0);
+	}
 	return (0);
 }
 
