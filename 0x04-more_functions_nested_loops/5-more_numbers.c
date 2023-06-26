@@ -13,7 +13,7 @@ void more_numbers(void)
 
 
 	j = 0;
-	while (j <= 10)
+	while (j <= 9)
 	{
 		for (num = 0; num <= 14; num++)
 		{
