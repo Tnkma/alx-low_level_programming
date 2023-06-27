@@ -9,5 +9,6 @@ int _strlen(char *s);
 void _puts(char *str);
 #include <stdlib.h>
 int _putchar(char c);
+void print_rev(char *s);
 
 #endif
