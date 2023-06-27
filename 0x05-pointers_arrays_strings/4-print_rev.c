@@ -9,7 +9,7 @@
 
 void print_rev(char *s)
 {
-	char pt[100];
+	char pt[1000];
 	int i = 0;
 	int j;
 	char temp;
