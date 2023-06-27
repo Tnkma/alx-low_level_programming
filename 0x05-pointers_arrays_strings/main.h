@@ -10,5 +10,6 @@ void _puts(char *str);
 #include <stdlib.h>
 int _putchar(char c);
 void print_rev(char *s);
+void puts2(char *str);
 
 #endif
