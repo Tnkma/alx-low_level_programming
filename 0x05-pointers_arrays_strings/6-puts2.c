@@ -10,7 +10,7 @@
 void puts2(char *str)
 {
 	int i, out_put;
-	char nu[20];
+	char nu[1000];
 
 	strcpy(nu, str);
 	out_put = strlen(nu);
