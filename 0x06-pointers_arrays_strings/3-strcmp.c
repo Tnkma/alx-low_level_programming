@@ -17,20 +17,27 @@ int _strcmp(char *s1, char *s2)
 	/*first find the strings and then compare using ACSII*/
 	while (*am_first != '\0' && *lasty != '\0')
 	{
-		if (*am_first > *lasty)
+		if (*am_first != *lasty)
 		{
-			return (15);
-		}
-		else if (*lasty > *am_first)
-		{
-			return (-15);
-		}
-		else
-		{
-			return (0);
+			if (*am_first > *lasty)
+			{
+				return (15);
+			}
+			else if (*lasty > *am_first)
+			{
+				return (-15);
+			}
 		}
 		am_first++;
 		lasty++;
+	}
+	if (*am_first == '\0' && *lasty != '\0')
+	{
+		return (-15);
+	}
+	else if (*am_first != '\0' && *lasty == '\0')
+	{
+		return (15);
 	}
 	return (0);
 }
