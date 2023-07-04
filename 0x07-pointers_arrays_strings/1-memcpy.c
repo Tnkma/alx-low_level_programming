@@ -2,7 +2,7 @@
 
 /**
  * _memcpy - memory copy
- * @:dest: destination to copy the ile to
+ * @dest: the destination of the memory
  * @src: source
  * @n: number
  *
