@@ -1,13 +1,28 @@
 #include "main.h"
 
 /**
- * reset_to_98 - resets the pointed number
- * @n: the pointed value
+ * _strcat - the function to write
+ * @dest: destination string
+ * @src: source string
  *
- * Return: Always void
+ * Return: Always a char pointer
  */
 
-void reset_to_98(int *n)
+char *_strcat(char *dest, char *src)
 {
-	*n = 98;
+	char *base_string = dest;
+	char *source_string = src;
+
+	while (*base_string != '\0')
+	{
+		base_string++;
+	}
+	while (*source_string != '\0')
+	{
+		*base_string = *source_string;
+		base_string++;
+		source_string++;
+	}
+	*base_string = '\0';
+	return (dest);
 }
