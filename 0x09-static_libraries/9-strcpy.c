@@ -1,17 +1,24 @@
 #include "main.h"
+
 /**
- * _strspn - returns the number of bits in the initial segment
- * @s: the memory to compare to
- * @accept: the character to check
+ * _strcpy - copies the string including the \0 char
+ * @dest: destination of the string
+ * @src: source of the string
  *
- * Return: a pointer with the count
+ * Return: a pointer to dest
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strcpy(char *dest, char *src)
 {
-	unsigned int m;
+	char *start = dest;
+	char *end = src;
 
-	m = strspn(s, accept);
-
-	return (m);
+	while (*end != '\0')
+	{
+		*start = *end;
+		start++;
+		end++;
+	}
+	*start = '\0';
+	return (dest);
 }
