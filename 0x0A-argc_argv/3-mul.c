@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	int i, sum = 1;
 
-	if (argc > 1)
+	if (argc >= 3)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -22,8 +22,7 @@ int main(int argc, char **argv)
 		}
 		printf("%d\n", sum);
 	}
-
-	else
+	else if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
