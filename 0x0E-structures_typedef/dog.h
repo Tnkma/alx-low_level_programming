@@ -12,9 +12,9 @@
 
 struct dog
 {
-	char name[20];
+	char name[200];
 	float age;
-	char owner[20];
+	char owner[200];
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
