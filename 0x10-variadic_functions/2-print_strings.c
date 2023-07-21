@@ -23,7 +23,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (show == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
+		}
+		else if (*show == '\0')
+		{
+			printf("(nil)");
 		}
 		else
 		{
@@ -36,4 +40,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 	}
 	printf("\n");
+	va_end(print_em);
 }
