@@ -1,5 +1,9 @@
 #include "main.h"
 
+
+int is_palindrome_helper(char *start, char *end);
+int find_length(char *s);
+
 int is_palindrome_helper(char *start, char *end);
 
 /**
@@ -10,21 +14,30 @@ int is_palindrome_helper(char *start, char *end);
  */
 int is_palindrome(char *s)
 {
+	int len;
 
-	int len = 0;
-
-
-	if (*s == '\0')
-	{
-		return (1);
-	}
-
-	for (len = 0; s[len] != '\0'; len++)
-
-		;
+	len = find_length(s);
 
 	return (is_palindrome_helper(s, s + len - 1));
+}
 
+/**
+ * find_length - finds the length of the string
+ * @s: the string to get th length
+ *
+ * Return: the length of the string
+ */
+
+int find_length(char *s)
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
+	{
+		return (1 + find_length(s + 1));
+	}
 }
 
 /**
