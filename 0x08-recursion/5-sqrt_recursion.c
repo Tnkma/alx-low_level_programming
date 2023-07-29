@@ -8,15 +8,15 @@
  */
 int sqrt_comparer(int n, int i)
 {
-    if (i * i == n)
-    {
-        return (i);
-    }
-    else if (i * i > n)
-    {
-        return (-1);
-    }
-    return (sqrt_comparer(n, i + 1));
+	if (i * i == n)
+	{
+		return (i);
+	}
+	else if (i * i > n)
+	{
+		return (-1);
+	}
+	return (sqrt_comparer(n, i + 1));
 }
 
 /**
@@ -28,6 +28,6 @@ int sqrt_comparer(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
-    return (sqrt_comparer(n, 1));
+	return (sqrt_comparer(n, 1));
 }
 
