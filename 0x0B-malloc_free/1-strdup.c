@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	}
 
 
-	if (new_string == NULL)
+	if (str > new_string)
 	{
 		return (NULL);
 	}
