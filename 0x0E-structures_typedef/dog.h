@@ -22,5 +22,6 @@ void print_dog(struct dog *d);
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif
