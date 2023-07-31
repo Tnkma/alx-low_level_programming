@@ -12,10 +12,14 @@
 
 struct dog
 {
-	char name[200];
+	char *name;
 	float age;
-	char owner[200];
+	char *owner;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 #endif
