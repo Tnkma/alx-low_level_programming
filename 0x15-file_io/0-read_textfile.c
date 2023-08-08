@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fp;
 	size_t count;
-	ssize_t	now_return;
+	size_t	now_return;
 	char *buf;
 
 	if (filename == NULL)
@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	buf = malloc(letters + 11);
+	buf = malloc(letters + 1);
 	if (buf == NULL)
 	{
 		fclose(fp);
@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	buf[count] = '\0';
 	now_return = fwrite(buf, sizeof(char), count, stdout);
-	if (now_return < -1)
+	if (now_return < count)
 	{
 		free(buf);
 		fclose(fp);
