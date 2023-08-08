@@ -39,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	buf[count] = '\0';
-	now_return = fwrite(buf, sizeof(char), count, stdout);
+	now_return = fwrite(buf, sizeof(char), count, stderr);
 	if (now_return < count)
 	{
 		free(buf);
