@@ -10,8 +10,8 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int to_flip;
-	int bit_count;
+	int to_flip = 0;
+	int bit_count = 0;
 
 	to_flip = n ^ m;
 	bit_count = counter(to_flip);
@@ -25,7 +25,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
  * Return: the count
  */
 
-int counter(int num)
+int counter(unsigned long int num)
 {
 	int i = 0;
 
