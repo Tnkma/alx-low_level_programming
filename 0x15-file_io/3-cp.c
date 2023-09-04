@@ -2,8 +2,8 @@
 
 /**
  * error_file - the function checks for files that can be opend
- * @file_from: file_from
- * @file_to: file_to
+ * @fil1: file_from
+ * @file2: file_to
  * @argv: command line arguments
  * Return: void since were void
  */
