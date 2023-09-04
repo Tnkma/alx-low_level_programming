@@ -3,7 +3,7 @@
 /**
  * error_file - the function checks for files that can be opend
  * @fil1: file_from
- * @file2: file_to
+ * @fil2: file_to
  * @argv: command line arguments
  * Return: void since were void
  */
