@@ -123,14 +123,14 @@ void display_osabi_info(Elf64_Ehdr *header)
 void display_type_and_entry(Elf64_Ehdr *header)
 {
 
-	printf(" Type:		");
+	printf(" Type:				");
 	switch (header->e_type)
 	{
 		case ET_NONE:
 			printf("NONE (No file type)\n");
 			break;
 		case ET_REL:
-			printf("REl (Relocatable file)\n");
+			printf("REL (Relocatable file)\n");
 			break;
 		case ET_EXEC:
 			printf("EXEC (Ecexution file)\n");
@@ -141,8 +141,19 @@ void display_type_and_entry(Elf64_Ehdr *header)
 		case ET_CORE:
 			printf("CORE (Core file)\n");
 			break;
+		default:
+			printf("Invalid\n");
+			break;
 	}
-	printf(" Entry point address:		0x%x\n", (unsigned int)header->e_entry);
+	if (header->e_ident[EI_CLASS] == ELFCLASS32)
+	{
+		printf(" Entry point address:		0x%x\n", (unsigned int)header->e_entry);
+	}
+	else if (header->e_ident[EI_CLASS] == ELFCLASS64)
+	{
+		printf(" Entry point address:		0x%lx\n", header->e_entry);
+	}
+
 }
 /**
  * main - entry point
