@@ -142,7 +142,7 @@ void display_type_and_entry(Elf64_Ehdr *header)
 			printf("CORE (Core file)\n");
 			break;
 	}
-	printf(" Entry point address:		0x%lx\n", header->e_entry);
+	printf(" Entry point address:		0x%x\n", (unsigned int)header->e_entry);
 }
 /**
  * main - entry point
