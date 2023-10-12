@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - length of the elements in a node
- * @: the node list
+ * @h: the node list
  *
  * Return: the count of the node
  */
