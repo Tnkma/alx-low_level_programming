@@ -19,7 +19,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	
 	/* set the prev pointer to NULL */
 	newnode->prev = NULL;
 	/*set the next pointer to the NULL */
