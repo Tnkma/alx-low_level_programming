@@ -1,17 +1,11 @@
 #include "main.h"
 /**
- * _strspn - returns the number of bits in the initial segment
- * @s: the memory to compare to
- * @accept: the character to check
+ * _strstr - returns the number of bits in the initial segment
+ * @haystack: the memory to compare to
+ * @needle: the character to check
  *
  * Return: a pointer with the count
  */
-
-unsigned int _strspn(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int m;
-
-	m = strspn(s, accept);
-
-	return (m);
 }
