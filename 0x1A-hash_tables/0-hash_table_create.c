@@ -10,6 +10,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *new_hash_table;
+	unsigned long int i;
 
 	new_hash_table = malloc(sizeof(hash_table_t));
 	/** check if memory allocation is successful */
@@ -25,6 +26,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		free(new_hash_table);
 		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		/** we set each of the array to NULL */
+		new_hash_table->array[i] = NULL;
 	}
 
 	/** we will have to return a  pointer to the created new_hash_table */
