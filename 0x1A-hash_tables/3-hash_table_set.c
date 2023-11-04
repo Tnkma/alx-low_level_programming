@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 /**
- * hash_table_set adds a new element to the hash table
+ * hash_table_set - adds a new element to the hash table
  * @ht: the hash_table
- * @key: the key 
+ * @key: the key
  * @value: the value to store
  *
  * Return: 1 if it succeeded, 0 otherwise
@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-	new_link->key =strdup(key);
+	new_link->key = strdup(key);
 	new_link->value = strdup(value);
 	new_link->next = NULL;
 
