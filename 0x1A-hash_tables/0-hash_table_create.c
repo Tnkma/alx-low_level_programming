@@ -25,7 +25,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/** assign the new list the size of the array */
 	new_hash_table->size = size;
 	/** allocate memory for the array to point to the next list */
-	new_hash_table->array = malloc(sizeof(hash_node_t) * size);
+	new_hash_table->array = malloc(sizeof(hash_node_ti *) * size);
 	if (!new_hash_table->array)
 	{
 		free(new_hash_table);
