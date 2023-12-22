@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A program that returns the perimeter of the island 
+A program that returns the perimeter of the island
 """
 
 
