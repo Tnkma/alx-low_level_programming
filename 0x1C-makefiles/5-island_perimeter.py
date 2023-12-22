@@ -2,6 +2,8 @@
 """
 A program that returns the perimeter of the island 
 """
+
+
 def island_perimeter(grid):
     """
     0 is water while 1 is land
