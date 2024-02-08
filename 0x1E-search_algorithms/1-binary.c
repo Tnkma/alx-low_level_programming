@@ -27,18 +27,18 @@ int binary_search(int *array, size_t size, int value)
 			printf("%d, ", array[i]);
 		}
 		printf("\n");
+		if (array[middle] == value)
+		{
+			return (middle);
+		}
 		if (array[middle] > value)
 		{
 			end = middle - 1;
-		}
-		else if (array[middle] < value)
-		{
-			start = middle + 1;
 
 		}
 		else
 		{
-			return (middle);
+			start = middle + 1;
 		}
 	}
 	return (-1);
